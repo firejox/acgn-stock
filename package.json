@@ -6,7 +6,8 @@
     "lint": "node ./node_modules/eslint/bin/eslint.js .",
     "pretest": "npm run lint --silent",
     "deploy": "DEPLOY_HOSTNAME=ap-southeast-2.galaxy.meteor.com meteor deploy acgn-stock.au.meteorapp.com --settings ./settings.json",
-    "postinstall": "opencollective postinstall"
+    "postinstall": "opencollective postinstall",
+    "test": "meteor test --once --driver-package meteortesting:mocha"
   },
   "dependencies": {
     "babel-runtime": "^6.20.0",
