@@ -34,6 +34,9 @@ jobs:
       - run:
           name: install npm packages
           command: meteor npm install
+      - run:
+          name: update meteor packages
+          command: meteor update --packages-only
       - save_cache:
           key: meteor-release-{{ checksum ".meteor/release" }}-{{ checksum ".circleci/config.yml" }}
           paths:
@@ -77,6 +80,9 @@ jobs:
       - run:
           name: test
           command: meteor npm test
+      - run:
+          name: run all unit test
+          command: meteor npm run test:units
 workflows:
   version: 2
   build_and_test:

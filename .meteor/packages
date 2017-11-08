@@ -29,3 +29,7 @@ mizzao:timesync
 http
 accounts-google
 meteortesting:mocha
+xolvio:cleaner
+hwillson:stub-collections
+practicalmeteor:mocha
+practicalmeteor:chai

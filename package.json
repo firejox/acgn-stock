@@ -7,7 +7,8 @@
     "pretest": "npm run lint --silent",
     "deploy": "DEPLOY_HOSTNAME=ap-southeast-2.galaxy.meteor.com meteor deploy acgn-stock.au.meteorapp.com --settings ./settings.json",
     "postinstall": "opencollective postinstall",
-    "test": "meteor test --once --driver-package meteortesting:mocha"
+    "test": "meteor test --once --driver-package meteortesting:mocha",
+    "test:units" : "tape tests/units/**/*.js"
   },
   "dependencies": {
     "babel-runtime": "^6.20.0",
@@ -31,7 +32,8 @@
     "eslint-plugin-react": "^7.1.0",
     "nightmare": "^2.10.0",
     "phantomjs-prebuilt": "^2.1.16",
-    "selenium-webdriver": "3.0.0-beta-2"
+    "selenium-webdriver": "3.0.0-beta-2",
+    "tape": "^4.8.0"
   },
   "collective": {
     "type": "opencollective",
