@@ -30,6 +30,6 @@ http
 accounts-google
 meteortesting:mocha
 xolvio:cleaner
-hwillson:stub-collections
 practicalmeteor:mocha
 practicalmeteor:chai
+hwillson:stub-collections

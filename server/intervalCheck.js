@@ -118,7 +118,8 @@ function doLoginObserver() {
   }
 }
 
-export default function testdoLoginObserver() { doLoginObserver(); }
+export const testdoLoginObserver = function() { doLoginObserver(); };
+
 
 //停止觀察處理登入IP紀錄、未登入天數
 function stopLoginObserver() {

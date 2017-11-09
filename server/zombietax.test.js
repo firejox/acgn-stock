@@ -1,7 +1,7 @@
 import { Meteor } from 'meteor/meteor';
 import StubCollections from 'meteor/hwillson:stub-collections';
 import { dbSeason } from '../db/dbSeason';
-import testdoLoginObserver from './intervalCheck';
+import { testdoLoginObserver } from './intervalCheck';
 import { chai } from 'meteor/practicalmeteor:chai';
 
 
